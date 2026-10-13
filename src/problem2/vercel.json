@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/problem-1",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/problem-2",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/problem-3",
+      "destination": "/index.html"
+    }
+  ]
+}

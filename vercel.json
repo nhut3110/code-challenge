@@ -1,0 +1,26 @@
+{
+  "installCommand": "npm --prefix src/problem2 ci",
+  "buildCommand": "npm --prefix src/problem2 run build",
+  "outputDirectory": "src/problem2/dist",
+  "rewrites": [
+    {
+      "source": "/problem-1",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/problem-2",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/problem-3",
+      "destination": "/index.html"
+    }
+  ],
+  "git": {
+    "deploymentEnabled": {
+      "*": false,
+      "nhut3110/fe-developer-application": true
+    }
+  },
+  "ignoreCommand": "[ \"$VERCEL_GIT_COMMIT_REF\" != \"nhut3110/fe-developer-application\" ]"
+}

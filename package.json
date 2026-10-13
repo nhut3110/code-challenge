@@ -1,0 +1,17 @@
+{
+  "name": "nhut3110-fe-developer-application",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:raw": "node --test src/problem1/sum-to-n.test.mjs src/problem3/balances.test.mjs",
+    "dev": "npm --prefix src/problem2 run dev",
+    "build": "npm --prefix src/problem2 run build",
+    "lint": "npm --prefix src/problem2 run lint",
+    "test": "npm --prefix src/problem2 test",
+    "format": "src/problem2/node_modules/.bin/prettier --write .",
+    "format:check": "src/problem2/node_modules/.bin/prettier --check ."
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
